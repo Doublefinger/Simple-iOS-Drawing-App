@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-I6-gmk">
+                                <rect key="frame" x="204" y="29" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3tl-PK-Hn4" userLabel="height = 30"/>
+                                </constraints>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAM-di-ouz"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-Y8-52r">
+                                <rect key="frame" x="18" y="30" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="bqP-0b-MUr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="oaj-tg-AFm"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeLineWidth:" destination="BYZ-38-t0r" eventType="valueChanged" id="fWp-14-UZY"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mn3-No-Ttl">
+                                <rect key="frame" x="275" y="30" width="38" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jg9-2f-4vr"/>
+                                </constraints>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iwa-jc-fj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXQ-RS-O1I">
+                                <rect key="frame" x="348" y="30" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z3b-GI-j2h"/>
+                                </constraints>
+                                <state key="normal" title="Title"/>
+                                <connections>
+                                    <action selector="addTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9B-Ic-Bkb"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="982-o4-9na">
+                                <rect key="frame" x="214" y="555" width="172" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="T3r-Ll-g7g"/>
+                                    <constraint firstAttribute="height" constant="28" id="sgl-0G-HOz" userLabel="height = 28"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="White"/>
+                                    <segment title="Gray"/>
+                                    <segment title="Black"/>
+                                </segments>
+                                <connections>
+                                    <action selector="backgroundChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="PRG-k7-XWx"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hFz-Y8-52r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1d0-RY-j2H" userLabel="Horizontal Slider.leading = leadingMargin + 0"/>
+                            <constraint firstItem="yjJ-I6-gmk" firstAttribute="leading" secondItem="hFz-Y8-52r" secondAttribute="trailing" constant="70" id="4AE-ad-gDb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="982-o4-9na" secondAttribute="bottom" constant="17" id="7kN-uA-4mt"/>
+                            <constraint firstItem="Mn3-No-Ttl" firstAttribute="leading" secondItem="yjJ-I6-gmk" secondAttribute="trailing" constant="35" id="JBw-cG-HZ7"/>
+                            <constraint firstItem="Mn3-No-Ttl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="VNs-ke-73u"/>
+                            <constraint firstItem="qXQ-RS-O1I" firstAttribute="leading" secondItem="Mn3-No-Ttl" secondAttribute="trailing" constant="35" id="gct-xr-8ot"/>
+                            <constraint firstItem="982-o4-9na" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbH-4a-EkA"/>
+                            <constraint firstItem="yjJ-I6-gmk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="kqM-kN-4Ye" userLabel="Clear.top = Top Layout Guide.bottom + 10"/>
+                            <constraint firstItem="qXQ-RS-O1I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pIe-yD-svO"/>
+                            <constraint firstItem="hFz-Y8-52r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="xmY-YO-RlL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="312"/>
+        </scene>
+    </scenes>
+</document>
