@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FEE6BE491D99C63600B0AA00"
-               BuildableName = "Lab3.app"
-               BlueprintName = "Lab3"
-               ReferencedContainer = "container:Lab3.xcodeproj">
+               BuildableName = "DrawingPanel.app"
+               BlueprintName = "DrawingPanel"
+               ReferencedContainer = "container:DrawingPanel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FEE6BE491D99C63600B0AA00"
-            BuildableName = "Lab3.app"
-            BlueprintName = "Lab3"
-            ReferencedContainer = "container:Lab3.xcodeproj">
+            BuildableName = "DrawingPanel.app"
+            BlueprintName = "DrawingPanel"
+            ReferencedContainer = "container:DrawingPanel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FEE6BE491D99C63600B0AA00"
-            BuildableName = "Lab3.app"
-            BlueprintName = "Lab3"
-            ReferencedContainer = "container:Lab3.xcodeproj">
+            BuildableName = "DrawingPanel.app"
+            BlueprintName = "DrawingPanel"
+            ReferencedContainer = "container:DrawingPanel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FEE6BE491D99C63600B0AA00"
-            BuildableName = "Lab3.app"
-            BlueprintName = "Lab3"
-            ReferencedContainer = "container:Lab3.xcodeproj">
+            BuildableName = "DrawingPanel.app"
+            BlueprintName = "DrawingPanel"
+            ReferencedContainer = "container:DrawingPanel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

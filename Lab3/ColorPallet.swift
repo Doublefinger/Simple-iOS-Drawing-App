@@ -9,7 +9,6 @@
 import UIKit
 
 class ColorPallet: UIButton {
-    
     init(color: UIColor, index: Int, y: CGFloat){
         let x : CGFloat = 30 + 55 * CGFloat(index)
         super.init(frame: CGRectMake(x, y, 40, 40))

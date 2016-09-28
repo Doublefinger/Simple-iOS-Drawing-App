@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Lab3.xcodeproj">
+      location = "self:/Users/Doublefinger/Desktop/CSE 438/Lab3/DrawingPanel.xcodeproj">
    </FileRef>
 </Workspace>
